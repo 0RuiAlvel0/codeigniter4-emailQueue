@@ -27,7 +27,7 @@ class EmailQueueHandler extends BaseCommand
         foreach ($emails as $row) {
             $email->clear();
             $email->setTo($row['to']);
-            $email->setMailType('html'); // <-- This is the key line to always send html content on the email
+            $email->setMailType('html');
             $email->setSubject($row['subject']);
             $email->setMessage($row['message']);
 
