@@ -1,0 +1,27 @@
+{
+    "name": "0ruialvel0/codeigniter4-emailqueue",
+    "description": "A CodeIgniter 4 addin to handle queued email sending via CLI and cron.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Supertechman",
+            "email": "parafernalia.dvp@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.2",
+        "codeigniter4/framework": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "EmailQueueModule\\": "src/"
+        }
+    },
+    "extra": {
+        "codeigniter4": {
+            "discoverable": true
+        }
+    }
+}
