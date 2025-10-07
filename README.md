@@ -57,7 +57,7 @@ $emailQueueModel = new \EmailQueueModule\Models\EmailQueueModel();
 $email = 'test@example.com';
 $emailQueueModel->insert([
 	'to' => $email,
-	'subject' => 'You’ve been Invited to Join SPOT',
+	'subject' => 'You’ve been Invited to Join the coolest community ever',
 	'message' => view('email_test_view', []),
 	'created_at' => date('Y-m-d H:i:s'),
 ]);
