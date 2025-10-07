@@ -32,7 +32,7 @@ class EmailQueueHandler extends BaseCommand
             $email->setMessage($row['message']);
 
             // TODO: #1 Optionally handle attachments and headers here
-
+            // TODO: #2 Implement max number of attempts before marking as failed
             try {
                 if ($email->send()) {
                     $emailQueue->update($row['id'], [
